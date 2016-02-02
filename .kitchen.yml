@@ -1,0 +1,29 @@
+---
+driver:
+  name: docker
+  use_sudo: false
+
+provisioner:
+  name: chef_zero
+
+# Uncomment the following verifier to leverage Inspec instead of Busser (the
+# default verifier)
+# verifier:
+#   name: inspec
+
+platforms:
+  - name: centos
+    driver_config:
+      image: centos
+      platform: rhel
+
+suites:
+  - name: default
+    run_list:
+      - recipe[ssh::default]
+      - recipe[python::default]
+      - recipe[git::default]
+      - recipe[ureka::default]
+    attributes: 
+      ssh:
+        options': {'Compression': 'yes', 'ForwardX11': 'yes', 'X11UseLocalhost': 'yes', 'UsePAM': 'no'}
