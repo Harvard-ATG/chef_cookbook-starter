@@ -9,7 +9,7 @@ This is a base cookbook to start confuguration managment for a new server that w
 Getting Started
 ---------------
 
-1 Clone this cookbook but set the remote repo name to 'starer' using: 
+1 Clone this cookbook but set the remote repo name to 'starer' using:
 
 ```
 git -o starter git@github.com:Harvard-ATG/chef_cookbook_starter.git YOUR_LOCAL_DIR
@@ -25,7 +25,6 @@ git -o starter git@github.com:Harvard-ATG/chef_cookbook_starter.git YOUR_LOCAL_D
 
 EOH
 version '0.1.0'
-
 
 depends 'yum', '~> 3.5.2'
 depends 'apt'

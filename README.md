@@ -3,14 +3,41 @@ Harvard ATG's chef starter cookbook cookbook
 
 chef starter cookbook (0.1.0) Base Cookbook
 
-Installs/Configures ...
+This is a base cookbook to start confuguration managment for a new server that will be running on an AWS cloud.
+
+Getting Started
+---------------
+
+1 Clone this cookbook but set the remote repo name to 'starer' using: 
+
+```
+git -o starter git@github.com:Harvard-ATG/chef_cookbook_starter.git YOUR_LOCAL_DIR
+```
+
+2 Create a new repo and add it as a new remote.
+
+3 Get required gems.
+
+4. Edit metadata.rb to relect the project and use as an author.
+
+5. Happy codeing!.
+
+
 
 Requirements
 ------------
 
 ### Platforms
 
+`centos >= 0.0.0`
+
+`ubuntu >= 0.0.0`
+
 ### Dependencies
+
+`yum ~> 3.5.2`
+
+`apt >= 0.0.0`
 
 
 Attributes
@@ -52,7 +79,7 @@ License and Authors
 ------------------
 
 The following engineers have contributed to this code:
- * [Josh Beauregard](https://github.com/sanguis) - 1 commits
+ * [Josh Beauregard](https://github.com/sanguis) - 7 commits
 
 Copyright:: 2016 Harvard ATG
 
